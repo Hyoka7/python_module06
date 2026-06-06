@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+from .light_validator import validate_ingredients
+
+
+def light_spell_allowed_ingredients() -> list[str]:
+    return ["earth", "air", "fire", "water"]
+
+
+def light_spell_record(spell_name: str, ingredients: str) -> str:
+    validated_str = validate_ingredients(ingredients)
+    if "INVALID" in validated_str:
+        return f"Spell rejected: {spell_name} ({validated_str})"
+    else:
+        return f"Spell recorded: {spell_name} ({validated_str})"
