@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 from .dark_spellbook import dark_allowed_ingredients
 
 

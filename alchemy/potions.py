@@ -9,5 +9,6 @@ def healing_potion() -> str:
 
 
 def strength_potion() -> str:
-    return f"Strength potion brewed with \
-             '{create_fire()}'and '{create_water()}'"
+    fire = create_fire()
+    water = create_water()
+    return f"Strength potion brewed with '{fire}'and '{water}'"

@@ -1,4 +1,4 @@
-#!/usr?bin?python3
+#!/usr/bin/python3
 
 
 def validate_ingredients(ingredients: str) -> str:
